@@ -5,11 +5,11 @@ import torchvision.transforms as transforms
 
 transform=transforms.Compose([transforms.ToTensor(),transforms.Normalize((0.4),(0.3))])
 
-trainset=torchvision.datasets.MNIST(root=r"/Users/samrullo/Documents/learning/data_science/pytorch/datasets",
+trainset=torchvision.datasets.MNIST(root=r"/Users/amrul/Documents/learning/data_science/pytorch/datasets",
                                     download=True,
                                     train=True,
                                     transform=transform)
-testset=torchvision.datasets.MNIST(root=r"/Users/samrullo/Documents/learning/data_science/pytorch/datasets",
+testset=torchvision.datasets.MNIST(root=r"/Users/amrul/Documents/learning/data_science/pytorch/datasets",
                                     download=True,
                                     train=False,
                                     transform=transform)
